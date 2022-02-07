@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.wrapper-light {
+  color: black;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper-dark {
+  color: white;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.logo h1 {
+  margin-bottom: 0;
+}
+
+.logo p {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.hero {
+  background-color: darkgray;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.hero h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero p {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.cto-light {
+  background-color: white;
+}
+
+.cto-dark {
+  background-color: black;
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.post-card {
+  width: 100%;
+  height: 9rem;
+  background-color: darkgray;
+  padding-inline: 1rem;
+  border-radius: 10px;
+}
+
+.post-title {
+  font-weight: 700;
+}
+
+.post-content {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.footer {
+  margin-top: 3rem;
+  background-color: darkgray;
+  text-align: center;
+  font-weight: 500;
+  padding-block: 1rem;
 }
